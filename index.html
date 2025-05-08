@@ -59,8 +59,8 @@
     (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
   </script>
 
-    <div class="md:flex">
-      <div class="container screen pt-7">
+    <div class="">
+      <div class="container screen pt-7 pb-">
         <button class="snipcart-checkout"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="cart"/></button>
           <nav class="primary-navigation">
             <ul><a href="index.html"><img src="final.svg"></a></ul>
@@ -68,15 +68,18 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="reiki.html">Reiki &dtrif;</a>
                     <ul class="dropdown">
-                      <li><a href="reikiWork.html">How does Reiki work?</a>
+                      <li><a href="reiki.html">What is Reiki?</a>
                       </li>
                     </ul>
                   </li>
 
                   <li><a href="javascript:void(0)">Services &dtrif;</a>
                       <ul class="dropdown">
-                          <li><a href="aura.html">Aura Cleansing</a></li>
+                          <li><a href="channeling.html">Channeling Work</a></li>
+                          <li><a href="aura.html">Aura Clensing</a></li>
+                          <li><a href="energy.html">Energy Balancing</a></li>
                           <li><a href="chakra.html">Chakra Balancing</a></li>
+                          <!-- Past Life Regression and Block Removal Removed -->
                           <li><a href="healingService.html">Reiki Healing</a></li>
                           <li><a href="learn.html">Learn Reiki</a></li>
                       </ul></li>
@@ -87,14 +90,15 @@
       </div>
     </div>
 
-    <div class="container py-5 px-28 mt-5 mb-6 flex-items-center ">
-        <h3 class="oswald-extra-bold text-6xl text-center tracking-wide underline underline-offset-[7px] decoration-[#973A3A] text-[#01A89E]">USUI SHIKI RYOHO 
-            USUI SYSTEM OF NATURAL HEALING</h3><br>
-            <p class="oswald-extra-bold text-center py-5 text-6xl tracking-wide underline underline-offset-[7px] decoration-[#973A3A]" style="color: #01A89E;">AND PERSONAL DEVELOPMENT<br></p><br>
+    <div class="container py-5 px-28 mt-5 mb-6 flex-items-center sm:py-5 sm:px-28 sm:mt-5 sm">
+        <h3 class="oswald-extra-bold text-4xl text-center tracking-wide underline underline-offset-[7px] decoration-[#973A3A] text-[#01A89E] sm:text-6xl">USUI SHIKI RYOHO 
+            USUI SYSTEM OF</h3><br>
+        <h3 class="oswald-extra-bold text-4xl text-center tracking-wide underline underline-offset-[7px] decoration-[#973A3A] text-[#01A89E] sm:text-6xl">NATURAL HEALING</h3>
+            <p class="oswald-extra-bold text-center py-5 text-6xl tracking-wide underline underline-offset-[7px] decoration-[#973A3A]" style="color: #01A89E;">& Personal Development<br></p><br>
 
             <div
             id="carouselExampleCaptions"
-            class="relative w-full"
+            class="relative w-full hide-mobile"
             data-twe-carousel-init
             data-twe-ride="carousel">
             <!--Carousel indicators-->
@@ -236,50 +240,14 @@
       <br>
       <br>
           <div class="">
-            <p class="oswald-extra-bold text-center py-5 text-6xl text-[#973A3A] underline underline-offset-[7px] decoration-[#973A3A]">THE WAY TO HEALTH, WEALTH, PEACE,<br> <br></p>
-            <p class="oswald-extra-bold text-center py-5 text-6xl underline underline-offset-[7px] decoration-[#973A3A]" style="color: #973A3A;">HAPPINESS AND SUCCESS FOR ALL CREATING LIVES CONSCIOUSLY<br><br></p>
-
-            <!-- this one we just omit for a while -->
-            <!-- <div class="container">
-              <div class="row">
-                <div class="reiki-card">
-                  <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">LET GO OF ANGER<br></p>
-                </div>
-                <div class="col-md-6">
-                  <div class="reiki-card">
-                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">LET GO OF ANGER<br></p>
-                  </div>
-
-                  <div class="reiki-card">
-                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">LET GO OF ALL WORRIES</p>
-                  </div> 
-                </div>
-                
-                <div class="col-md-6">
-                  <div class="reiki-card">
-                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">BE THANKFUL FOR ALL YOUR MANY BLESSINGS</p>
-                  </div>
-
-                  <div class="reiki-card">
-                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">WORK HONESTLY</p>
-                  </div>
-              </div>
-                <div class="col-md-6">
-                  <div class="reiki-card">
-                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">BEKIND TO YOUR NEIGHBOUR AND ALL LIVING BEINGS</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="reiki-card">
-                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">LIVE IN HARMONY WITH THE UNIVERSE AND YOURSELF</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
+            <p class="oswald-extra-bold text-center py-5 text-7xl text-[#01A89E] underline underline-offset-[7px] decoration-[#973A3A]" >THE WAY TO HEALTH, WEALTH, PEACE, HAPPINESS<br> <br> & SUCCESS FOR ALL</p><br>
+            <p class="oswald-extra-bold text-center py-5 text-7xl underline underline-offset-[7px] decoration-[#973A3A]" style="color: #01A89E;">CREATING LIVES CONSCIOUSLY<br><br></p>
           </div>
     </div>
-      <br>
+    <p class="oswald-regular font-bold text-center mt-5 text-3xl text-[#973A3A]">Disclaimer: Golden Lotus Reiki Centre does not propose to replace any ongoing treatment or medication. The centre only
+            a way to promote the healing process of the body & mind and well being.
+        </p>
+      <br><br>
       <div class="container px-28 py-2 flex flex-items-center">
         <div class="flex items-center py-5">
           <div class="0">
