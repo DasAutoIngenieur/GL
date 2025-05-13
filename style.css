@@ -78,3 +78,8 @@ body{
   position:center;
   margin:20px auto;
 }
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }}
