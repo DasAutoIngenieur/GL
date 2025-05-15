@@ -83,3 +83,9 @@ body{
   .hide-mobile {
     display: none;
   }}
+
+@media (min-width: 769px) {
+    .hide-pc {
+      display: none;
+    }
+  }
